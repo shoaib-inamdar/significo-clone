@@ -1,0 +1,32 @@
+*::selection{
+    background-color: #EF9D71;
+}
+body[theme="black"]{
+    background-color: #000;
+}
+body[theme="black"] .section{
+    color: #fff;
+}
+body[theme="cyan"]{
+    background-color: #AEDEE0;
+}
+body[theme="salmon"]{
+    background-color: #EF9D71;
+}
+body[theme="white"]{
+    background-color: #fff;
+}
+
+body{
+    transition: background-color ease-out .5s;
+}
+.videos{
+    clip-path: circle(var(--clip)at 50% 50%);
+}
+.listelem:hover .bluelayer{
+    height: 100%;
+    transition: .2s all ease-in-out;
+}
+.listelem:hover{
+    color: #fff;
+}
