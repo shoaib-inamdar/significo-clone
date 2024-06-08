@@ -128,3 +128,14 @@ function colortransition(){
 })
 }
 colortransition()
+
+gsap.to('.disappear',{
+    scrollTrigger:{
+        trigger:".real",
+        scrub:1,
+        // markers:true,
+        start:"-85% -90%",
+        end:"bottom 20%"
+    },
+    opacity:0
+})
