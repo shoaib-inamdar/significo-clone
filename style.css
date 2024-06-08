@@ -35,3 +35,9 @@ body{
     color: #fff;
     transition: .2s all ease-in-out;
 }
+.real,.para,.capsule,.team{
+    overflow-x: hidden;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
