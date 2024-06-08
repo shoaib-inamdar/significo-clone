@@ -30,3 +30,8 @@ body{
 .listelem:hover{
     color: #fff;
 }
+.card:hover{
+    background: #000;
+    color: #fff;
+    transition: .2s all ease-in-out;
+}
