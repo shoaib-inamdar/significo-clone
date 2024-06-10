@@ -1,6 +1,10 @@
 *::selection{
     background-color: #EF9D71;
 }
+@font-face {
+    font-family: 'neue';
+    src: url(Neue\ Machina\ Inktrap\ Medium.ttf);
+}
 body[theme="black"]{
     background-color: #000;
 }
@@ -19,6 +23,7 @@ body[theme="white"]{
 
 body{
     transition: background-color ease-out .5s;
+    font-family: 'neue';
 }
 .videos{
     clip-path: circle(var(--clip)at 50% 50%);
