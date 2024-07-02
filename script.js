@@ -10,6 +10,9 @@ var tl=gsap.timeline({
         
     }
 });
+var tl2=gsap.timeline({
+    
+});
 function home(){
     
 tl.to(".videos",{
@@ -33,7 +36,66 @@ tl.to(".slidesm",{
 }
 home()
 
+function cards(){
+    gsap.from('.no1',{
+        scaleX:.9,
+        // stagger:1,
+        background:'#fff',
+        color:'#000',
+        scrollTrigger:{
+            scroller:'body',
+            trigger:".no1",
+            start:"-10% 35%",
+            end:"10% bottom",
+            // markers:true,
+            scrub:1,
+        },
+    })
+    gsap.from('.no2',{
+        scaleX:.9,
+        // stagger:1,
+        background:'#fff',
+        color:'#000',
+        scrollTrigger:{
+            scroller:'body',
+            trigger:".no2",
+            start:"-10% 35%",
+            end:"10% bottom",
+            // markers:true,
+            scrub:1,
+        },
+    })
+    gsap.from('.no3',{
+        scaleX:.9,
+        // stagger:1,
+        background:'#fff',
+        color:'#000',
+        scrollTrigger:{
+            scroller:'body',
+            trigger:".no3",
+            start:"-10% 35%",
+            end:"10% bottom",
+            // markers:true,
+            scrub:1,
+        },
+    })
+    gsap.from('.no4',{
+        scaleX:.9,
+        // stagger:1,
+        background:'#fff',
+        color:'#000',
+        scrollTrigger:{
+            scroller:'body',
+            trigger:".no4",
+            start:"-10% 35%",
+            end:"10% bottom",
+            // markers:true,
+            scrub:1
+        },
+    })
+}
 
+cards()
 
 function real(){
     gsap.to(".slide",{
@@ -138,4 +200,27 @@ gsap.to('.disappear',{
         end:"bottom 20%"
     },
     opacity:0
+})
+
+var clutter1="";
+document.querySelector(".footertext>h1")
+.textContent.split("")
+.forEach(function(e){
+    if(e==="") clutter1+=`<span>$nbsp;</span>`
+    clutter1+=`<span>${e}</span>`;
+})
+document.querySelector(".footertext>h1").innerHTML=clutter1;
+
+gsap.from(".footertext>h1>span",{
+    opacity:0,
+    // transform:"translateY(-100%)",  
+      stagger:.3,
+    ease:Power4,
+    scrollTrigger:{
+        trigger:".footer",
+        scrub:1,
+        start:"70% 70%",
+        end:"70% 90%",
+        // markers:true
+    }
 })

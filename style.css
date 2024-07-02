@@ -23,6 +23,9 @@ body[theme="white"]{
 
 body{
     transition: background-color ease-out .5s;
+}
+.section{
+    
     font-family: 'neue';
 }
 .videos{
@@ -39,6 +42,9 @@ body{
     background: #000;
     color: #fff;
     transition: .2s all ease-in-out;
+}
+.cards{
+    transition: 1s all ease-in-out;
 }
 .real,.para,.capsule,.team{
     overflow-x: hidden;
